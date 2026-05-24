@@ -112,7 +112,7 @@ export default function App() {
                 <path d="M13 7 Q19 9 19 15 Q19 21 13 21 Q9 19 13 13Z" fill="#6b9a5e" opacity="0.75" />
               </svg>
               <span style={{ fontFamily: "'Playfair Display', Georgia, serif", fontSize: '18px', fontWeight: 600, color: '#2a3320' }}>
-                Sage Devlin
+                Illyria Dy
               </span>
             </button>
 
