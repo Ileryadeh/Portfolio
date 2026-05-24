@@ -202,7 +202,7 @@ export function Flower({ project }: FlowerProps) {
                 <h2 style={{ fontFamily: DISPLAY, fontSize: 28, fontWeight: 700, color: '#2a3320', marginBottom: 8, lineHeight: 1.2 }}>
                   {project.name}
                 </h2>
-                <p style={{ fontFamily: BODY, fontSize: 14, color: '#6b6245', lineHeight: 1.75, marginBottom: 18 }}>
+                <p style={{ fontFamily: BODY, fontSize: 14, color: '#6b6245', lineHeight: 1.75, marginBottom: 18,  whiteSpace: 'pre-line', }}>
                   {project.desc}
                 </p>
                 <div style={{ display: 'flex', flexWrap: 'wrap', gap: 7, marginBottom: 24 }}>

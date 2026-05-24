@@ -73,19 +73,38 @@ export function DesktopMockup({ screens, flowerColor }: DesktopMockupProps) {
             zIndex: 1,
           }}
         >
-          <img
-            src={screens[idx]}
-            alt={`screen ${idx + 1}`}
-            style={{
-              width: '100%',
-              height: '100%',
-              objectFit: 'cover',
-              objectPosition: 'center top',
-              display: 'block',
-              opacity: animating ? 0 : 1,
-              transition: 'opacity 0.18s ease',
-            }}
-          />
+            {screens[idx].match(/\.(mp4|webm|ogg)$/) ? (
+              <video
+                key={screens[idx]}
+                src={screens[idx]}
+                style={{
+                  width: '100%',
+                  height: '100%',
+                  objectFit: 'cover',
+                  display: 'block',
+                  opacity: animating ? 0 : 1,
+                  transition: 'opacity 0.18s ease',
+                }}
+                autoPlay
+                loop
+                muted
+                playsInline
+              />
+            ) : (
+              <img
+                src={screens[idx]}
+                alt={`screen ${idx + 1}`}
+                style={{
+                  width: '100%',
+                  height: '100%',
+                  objectFit: 'cover',
+                  objectPosition: 'center top',
+                  display: 'block',
+                  opacity: animating ? 0 : 1,
+                  transition: 'opacity 0.18s ease',
+                }}
+              />
+            )}
           {clickable && (
             <div
               style={{

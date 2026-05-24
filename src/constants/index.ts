@@ -59,7 +59,7 @@ export const projects = [
   },
   {
     name: 'BlackJack Mafia',
-    desc: 'Lightweight local-first database that syncs gracefully when connectivity is restored.',
+    desc: 'A mafia-themed Blackjack game developed with the Godot Engine featuring bonus moves, strategic twists, and crime-inspired gameplay mechanics.',
     tech: ['Godot Engine', 'GDScript', 'Game'],
     github: 'https://github.com/Ileryadeh/BlackJackMafia',
     flowerColor: '#52a04a',
@@ -79,7 +79,7 @@ export const projects = [
   },
   {
     name: 'Lutaw',
-    desc: 'Arduino-based disaster assistance life jacket with GPS and GSM integration using C++ for real-time tracking and emergency alerts.',
+    desc: 'Arduino-based disaster assistance life jacket with GPS and GSM integration using C++ for real-time tracking and emergency alerts.\n DOST TAPI CLUSTERICE Finalist 2024',
     tech: ['C++', 'Arduino', 'GPS & SMS'],
     flowerColor: '#c87840',
     petalColor: '#e8b07a',
@@ -99,7 +99,7 @@ export const LUTAW_SCREENS = [  lutaw1, lutaw2];
 
 export const TARA_SCREENS = [tara1, tara2, tara3, tara4, tara5];
 
-export const BLACKJACK_MAFIA_SCREENS = [bj1, bj2, bj3];
+export const BLACKJACK_MAFIA_SCREENS = [bj1, bj2, bj3, '/videos/bj_mafia.mp4'];
 
 export const FLOWER_COLORS: Record<string, { petal: string; center: string }> = {
   'JavaScript':   { petal: '#f7df4a', center: '#c4a010' },

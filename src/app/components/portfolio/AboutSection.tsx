@@ -242,7 +242,7 @@ export function AboutSection() {
                       { year: '2023 – Present', title: 'BS Computer Science', sub: 'University of the Philippines Cebu' },
                       { year: '2023 - Present ', title: 'UP Computer Science Guild' }, 
                       { year: '2025', title: 'Can You HackIT - The IBPAP Challenge (Hackathon)' }, 
-                      { year: '2025 - 2026', title: 'Overall Head of Komsai Week ByteBlitz Programming Competition' }, 
+                      { year: '2025 & 2026', title: 'Overall Head of Komsai Week ByteBlitz Programming Competition' }, 
                       { year: '2024', title: 'Technology Application and Promotion Institute CLUSTERICE Finalist ' }, 
                       { year: '2021 – 2023', title: 'Science, Technology, Engineering, and Mathematics (STEM)', sub: 'Science and Technology Education Center (STEC)' },
                     ].map(({ year, title, sub }) => (
