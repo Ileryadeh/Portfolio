@@ -19,8 +19,8 @@ export function Flower({ project }: FlowerProps) {
   const isBlackJack = project.name === 'BlackJack Mafia';
   const isAgap = project.name === 'Agap';
   const isLutaw = project.name === 'Lutaw';
-  const projectLink = project.github;
-  const linkLabel = 'View on GitHub →';
+  const projectLink = project.github ?? project.figma;
+  const linkLabel = project.github ? 'View on GitHub →' : 'View Prototype →';
 
   useEffect(() => {
     if (open) {

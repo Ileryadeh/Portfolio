@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { BODY, DISPLAY, MONO } from '../../../constants/index';
-import photo from "../../assets/olivia.png";
-import secondPhoto from "../../assets/email_photo_crop.jpg";
+import photo from "../../assets/photo1.png";
+import secondPhoto from "../../assets/photo2.png";
 
 export function AboutSection() {
   const [aboutOpen, setAboutOpen] = useState(false);
@@ -10,7 +10,6 @@ export function AboutSection() {
   return (
     <section id="about" className="min-h-screen flex items-center py-28">
       <div className="max-w-5xl mx-auto px-8 flex flex-col md:flex-row items-center gap-14">
-        <div className="relative w-56 h-64 flex-shrink-0">
           <div className="absolute inset-0 rounded-2xl border-2 border-border bg-card" />
           {[
             'absolute -top-3 -left-3',
@@ -22,7 +21,7 @@ export function AboutSection() {
               <path d="M0 36 Q10 18 36 0 Q26 14 13 22 Q4 28 0 36Z" fill="#4a6741" opacity="0.45" />
             </svg>
           ))}
-          <div className="relative w-56 h-64 flex-shrink-0"
+          <div className="relative w-56 h-64 flex-shrink-0 mx-auto"
            onMouseEnter={() => setPhotoHovered(true)}
            onMouseLeave={() => setPhotoHovered(false)}
           >
@@ -58,13 +57,13 @@ export function AboutSection() {
                     'absolute -bottom-3 -right-3 scale-x-[-1] scale-y-[-1]',
                 ].map((cls, i) => (
                     <svg key={i} className={cls} width="30" height="30" viewBox="0 0 36 36" fill="none"
-                    style={{ zIndex: 2, position: 'absolute' }}
+                      style={{ zIndex: 2, position: 'absolute' }}
                     >
-                    <path d="M0 36 Q10 18 36 0 Q26 14 13 22 Q4 28 0 36Z" fill="#4a6741" opacity="0.45" />
+                      <path d="M0 36 Q10 18 36 0 Q26 14 13 22 Q4 28 0 36Z" fill="#4a6741" opacity="0.45" />
                     </svg>
                 ))}
                 </div>
-        </div>
+  
 
         <div className="space-y-5">
           <div>
@@ -240,8 +239,11 @@ export function AboutSection() {
                   </p>
                   <div style={{ display: 'flex', flexDirection: 'column', gap: 8 }}>
                     {[
-                      { year: '2023 – present', title: 'BS Computer Science', sub: 'University of the Philippines Cebu' },
-                      { year: '2023 - Present ', title: 'UP Computer Science Guild', sub: 'Volunteer & Block Representative' }, 
+                      { year: '2023 – Present', title: 'BS Computer Science', sub: 'University of the Philippines Cebu' },
+                      { year: '2023 - Present ', title: 'UP Computer Science Guild' }, 
+                      { year: '2025', title: 'Can You HackIT - The IBPAP Challenge (Hackathon)' }, 
+                      { year: '2025 - 2026', title: 'Overall Head of Komsai Week ByteBlitz Programming Competition' }, 
+                      { year: '2024', title: 'Technology Application and Promotion Institute CLUSTERICE Finalist ' }, 
                       { year: '2021 – 2023', title: 'Science, Technology, Engineering, and Mathematics (STEM)', sub: 'Science and Technology Education Center (STEC)' },
                     ].map(({ year, title, sub }) => (
                       <div key={title} style={{ display: 'flex', gap: 14, alignItems: 'flex-start' }}>

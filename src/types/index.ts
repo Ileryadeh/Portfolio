@@ -3,6 +3,7 @@ export type Project = {
   desc: string;
   tech: string[];
   github?: string;
+  figma?: string;
   apk?: string;
   flowerColor: string;
   petalColor: string;
