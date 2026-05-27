@@ -38,7 +38,7 @@ export const navLinks = [
 export const projects = [
   {
     name: 'Comfee',
-    desc: 'A social coffe app for sharing tastes, discovering hidden gems, and connecting with coffe lovers.',
+    desc: 'A social coffee app for sharing tastes, discovering hidden gems, and connecting with coffee lovers.',
     tech: ['React Native', 'Android', 'Supabase'],
     github: 'https://github.com/YxaBlue/Comfee',
     apk: 'https://drive.google.com/file/d/1rowXyPLT-y7YoKIP0400VOK9PsQrGnPt/view?usp=sharing',
