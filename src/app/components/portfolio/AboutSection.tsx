@@ -141,7 +141,7 @@ export function AboutSection() {
                 boxShadow: '0 24px 80px rgba(42,51,32,0.28), 0 4px 16px rgba(42,51,32,0.12)',
                 padding: '28px 32px',
                 position: 'relative',
-                overflow: 'hidden',
+                overflowX: 'hidden',
                 overflowY: 'auto',
                 maxHeight: '90vh',
 
@@ -178,6 +178,37 @@ export function AboutSection() {
                   ×
                 </button>
               </div>
+
+              {/* Download Portfolio */}
+            <div style={{ marginTop: 10, display: 'flex', justifyContent: 'left' }}>
+              <a
+                href="/cv/illyria-dy-portfolio.pdf"
+                download="Illyria_Dy_Portfolio.pdf"
+                style={{
+                  fontFamily: BODY,
+                  fontSize: 13,
+                  fontWeight: 600,
+                  padding: '10px 24px',
+                  borderRadius: 10,
+                  background: 'transparent',
+                  color: '#4a6741',
+                  border: '1.5px solid rgba(74,103,65,0.4)',
+                  cursor: 'pointer',
+                  transition: 'background 0.2s, border-color 0.2s',
+                  letterSpacing: '0.02em',
+                  textDecoration: 'none',
+                  display: 'inline-flex',
+                  alignItems: 'center',
+                  gap: 7,
+                }}
+              >
+                <svg width="13" height="13" viewBox="0 0 16 16" fill="none">
+                  <path d="M8 2 L8 11 M4 8 L8 12 L12 8" stroke="#4a6741" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"/>
+                  <path d="M2 13 L14 13" stroke="#4a6741" strokeWidth="1.8" strokeLinecap="round"/>
+                </svg>
+                Download Portfolio PDF
+              </a>
+            </div>
               {/* At a Glance stats */}
                 <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: 10, margin: '20px 0' }}>
                   {[
@@ -268,9 +299,8 @@ export function AboutSection() {
                     "I approach codebases the way I tend a garden — with patience, intention, and deep respect for what's already growing. I'm collaborative, detail-oriented, and always thinking about the person on the other side of the screen."
                   </p>
                 </div>
-              
-
             </div>
+            
           </div>
         </>
       )}

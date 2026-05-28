@@ -273,7 +273,35 @@ export function Flower({ project }: FlowerProps) {
                       Download APK
                     </a>
                   )}
-                  </div>
+
+                  {project.pdf && (
+                    <a
+                      href={project.pdf}
+                      download
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      style={{
+                        fontFamily: BODY,
+                        fontSize: 14,
+                        fontWeight: 600,
+                        padding: '11px 28px',
+                        borderRadius: 99,
+                        background: 'transparent',
+                        color: '#4a6741',
+                        border: '1.5px solid rgba(74,103,65,0.4)',
+                        cursor: 'pointer',
+                        transition: 'background 0.2s, border-color 0.2s',
+                        letterSpacing: '0.02em',
+                        textDecoration: 'none',
+                        display: 'inline-block',
+                      }}
+                      onMouseEnter={(e) => { e.currentTarget.style.background = 'rgba(74,103,65,0.06)'; e.currentTarget.style.borderColor = '#4a6741'; }}
+                      onMouseLeave={(e) => { e.currentTarget.style.background = 'transparent'; e.currentTarget.style.borderColor = 'rgba(74,103,65,0.4)'; }}
+                    >
+                      Download PDF
+                    </a>
+                  )}
+                </div>
               </div>
             </div>
           </div>
