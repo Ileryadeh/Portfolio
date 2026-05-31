@@ -88,8 +88,8 @@ export const projects = [
   },
 ];
 
-export const skillRow1 = ['JavaScript', 'TypeScript', 'C/C++', 'Python', 'HTML', 'CSS'];
-export const skillRow2 = ['React.js', 'React Native', 'Flutter', 'Git', 'GitHub'];
+export const skillRow1 = ['JavaScript', 'TypeScript', 'C/C++', 'C#', 'Python', 'HTML', 'CSS'];
+export const skillRow2 = ['React.js', 'React Native', 'Flutter', '.NET', 'Git', 'GitHub'];
 
 export const COMFEE_SCREENS = [comfee1, comfee2, comfee3, comfee4, comfee5];
 

@@ -99,6 +99,20 @@ export function TechLogo({ name, size = 44 }: TechLogoProps) {
           <path d="M22 8 C14.3 8 8 14.3 8 22 C8 28.2 12 33.4 17.6 35.2 C18.3 35.4 18.6 34.9 18.6 34.5 L18.6 32 C14.7 32.9 13.9 30.3 13.9 30.3 C13.3 28.7 12.4 28.3 12.4 28.3 C11.2 27.5 12.5 27.5 12.5 27.5 C13.8 27.6 14.5 28.9 14.5 28.9 C15.7 31 17.7 30.4 18.6 30 C18.7 29.2 19 28.6 19.4 28.3 C16.2 27.9 12.8 26.7 12.8 21.2 C12.8 19.7 13.3 18.5 14.2 17.5 C14 17.1 13.6 15.8 14.4 14 C14.4 14 15.5 13.6 18.5 15.3 C19.7 15 21 14.8 22.2 14.8 C23.4 14.8 24.7 15 25.9 15.3 C28.9 13.6 30 14 30 14 C30.8 15.8 30.4 17.1 30.2 17.5 C31.1 18.5 31.6 19.7 31.6 21.2 C31.6 26.7 28.2 27.9 25 28.3 C25.5 28.7 26 29.5 26 30.8 L26 34.5 C26 34.9 26.3 35.4 27 35.2 C32.6 33.4 36.6 28.2 36.6 22 C36.6 14.3 30.3 8 22 8 Z" fill="#f0f6fc" />
         </svg>
       );
+      case 'C#':
+      return (
+        <svg width={s} height={s} viewBox="0 0 44 44" fill="none">
+          <circle cx="22" cy="22" r="21" fill="#9B4F96" />
+          <text x="8" y="29" fontFamily="'Arial Black',sans-serif" fontSize="16" fontWeight="900" fill="#fff">C#</text>
+        </svg>
+      );
+    case '.NET':
+      return (
+        <svg width={s} height={s} viewBox="0 0 44 44" fill="none">
+          <circle cx="22" cy="22" r="21" fill="#512BD4" />
+          <text x="4" y="29" fontFamily="'Arial Black',sans-serif" fontSize="13" fontWeight="900" fill="#fff">.NET</text>
+        </svg>
+      );
     // Figma logo removed
     default:
       return (
