@@ -49,7 +49,7 @@ export const projects = [
   },
   {
     name: 'TARA',
-    desc: 'Tech Access Reskilling with AI — An AI-powered platform for accessible tech learning and personalized reskilling.ent opportunities.',
+    desc: 'Tech Access Reskilling with AI — An AI-powered platform for accessible tech learning and personalized reskilling opportunities.',
     tech: ['Python', 'Flet', 'AI'],
     github: 'https://github.com/Ileryadeh/TARA_App',
     flowerColor: '#d4a830',
