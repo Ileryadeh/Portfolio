@@ -60,7 +60,6 @@ export function ContactSection() {
       ))}
 
       <div className="max-w-4xl mx-auto px-8 relative z-10">
-        {/* Header */}
         <div className="text-center mb-16">
           <p className="text-xs tracking-widest uppercase text-accent mb-3" style={{ fontFamily: MONO }}>The Root System</p>
           <h2 className="text-4xl md:text-5xl text-foreground" style={{ fontFamily: "'Playfair Display', Georgia, serif" }}>Let's Grow Together</h2>
@@ -69,7 +68,6 @@ export function ContactSection() {
           </p>
         </div>
 
-        {/* Contact Form Card */}
         <div
           className="relative rounded-3xl overflow-hidden border border-border mb-6"
           style={{ background: '#efe9d8' }}
@@ -137,7 +135,6 @@ export function ContactSection() {
                 />
               </div>
 
-              {/* Submit */}
               <div style={{ display: 'flex', justifyContent: 'flex-end' }}>
                 <button
                   type="submit"
@@ -166,7 +163,6 @@ export function ContactSection() {
           </div>
         </div>
 
-        {/* Links Card */}
         <div className="relative rounded-3xl overflow-hidden border border-border" style={{ background: '#efe9d8' }}>
           <div className="px-8 py-8">
             <p className="text-center text-xs tracking-widest uppercase text-muted-foreground mb-6" style={{ fontFamily: MONO }}>
