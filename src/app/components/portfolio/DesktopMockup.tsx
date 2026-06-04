@@ -41,20 +41,13 @@ export function DesktopMockup({ screens, flowerColor }: DesktopMockupProps) {
         <defs>
           <mask id="desktop-mask">
             <rect x="0" y="0" width={MW} height={MH} rx="10" fill="white" />
-            {/* Black = transparent hole where screen goes */}
             <rect x={bezelSide} y={bezelT} width={screenW} height={screenH} rx="4" fill="black" />
           </mask>
         </defs>
 
-        {/* Monitor body with screen hole */}
         <rect x="0" y="0" width={MW} height={MH} rx="10" ry="10" fill="#1c1c1e" mask="url(#desktop-mask)" />
-
-        {/* Delete the old black screen rect — it's gone */}
-
-        {/* Power LED */}
         <circle cx={MW / 2} cy={MH - 5} r="2.5" fill={flowerColor} opacity="0.7" />
 
-        {/* Accent border */}
         <rect x="1" y="1" width={MW - 2} height={MH - 2} rx="9" ry="9"
           fill="none" stroke={flowerColor} strokeWidth="1.2" opacity="0.3" />
       </svg>

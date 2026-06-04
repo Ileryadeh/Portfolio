@@ -25,10 +25,8 @@ export function AboutSection() {
            onMouseEnter={() => setPhotoHovered(true)}
            onMouseLeave={() => setPhotoHovered(false)}
           >
-                {/* Background card */}
                 <div className="absolute inset-0 rounded-2xl border-2 border-border bg-card" />
                 
-                {/* Your photo — sits above the bg card, below the corner accents */}
                 <img
                     src={photo}
                     alt="Illyria Dy"
@@ -49,7 +47,6 @@ export function AboutSection() {
                     }}
                 />
 
-                {/* Corner botanical accents — on top of the photo */}
                 {[
                     'absolute -top-3 -left-3',
                     'absolute -top-3 -right-3 scale-x-[-1]',
@@ -179,7 +176,6 @@ export function AboutSection() {
                 </button>
               </div>
 
-              {/* Download Portfolio */}
             <div style={{ marginTop: 10, display: 'flex', justifyContent: 'left' }}>
               <a
                 href="/cv/illyria-dy-portfolio.pdf"
@@ -209,7 +205,6 @@ export function AboutSection() {
                 Download Portfolio PDF
               </a>
             </div>
-              {/* At a Glance stats */}
                 <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: 10, margin: '20px 0' }}>
                   {[
                     { value: '3+', label: 'Years Coding' },

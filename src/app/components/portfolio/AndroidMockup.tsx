@@ -21,8 +21,8 @@ export function AndroidMockup({ screens, flowerColor }: AndroidMockupProps) {
 
   const W = 170;
   const H = 340;
-  const rx = 36;          // very rounded corners for modern look
-  const bezel = 6;        // thin bezel
+  const rx = 36;          
+  const bezel = 6;       
   const screenX = bezel;
   const screenY = bezel;
   const screenW = W - bezel * 2;
@@ -32,7 +32,6 @@ export function AndroidMockup({ screens, flowerColor }: AndroidMockupProps) {
     <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 12 }}>
       <div style={{ position: 'relative', width: W, height: H, flexShrink: 0 }}>
 
-        {/* SVG shell — sits on top with pointer-events: none */}
         <svg
           width={W} height={H}
           viewBox={`0 0 ${W} ${H}`}
@@ -40,40 +39,33 @@ export function AndroidMockup({ screens, flowerColor }: AndroidMockupProps) {
         >
           <defs>
             <mask id="modern-phone-mask">
-              {/* White = visible, Black = transparent hole */}
               <rect x="0" y="0" width={W} height={H} rx={rx} fill="white" />
               <rect x={screenX} y={screenY} width={screenW} height={screenH}
                 rx={rx - bezel} fill="black" />
             </mask>
           </defs>
 
-          {/* Phone body with screen hole */}
           <rect x="0" y="0" width={W} height={H} rx={rx} fill="#0a0a0a"
             mask="url(#modern-phone-mask)" />
 
-          {/* Thin side buttons */}
           <rect x={W - 2} y="90" width="2.5" height="50" rx="1.5" fill="#2a2a2a" />
           <rect x={W - 2} y="150" width="2.5" height="35" rx="1.5" fill="#2a2a2a" />
           <rect x="-0.5" y="100" width="2.5" height="40" rx="1.5" fill="#2a2a2a" />
 
-          {/* Punch-hole camera */}
           <circle cx={W / 2} cy={screenY + 18} r="5" fill="#0a0a0a" />
           <circle cx={W / 2} cy={screenY + 18} r="3" fill="#111" />
           <circle cx={W / 2 - 1} cy={screenY + 17} r="1" fill="rgba(255,255,255,0.12)" />
 
-          {/* Pill home indicator */}
           <rect
             x={W / 2 - 28} y={H - bezel - 8}
             width="56" height="4" rx="2"
             fill="rgba(255,255,255,0.35)"
           />
 
-          {/* Colored accent ring */}
           <rect x="1" y="1" width={W - 2} height={H - 2} rx={rx}
             fill="none" stroke={flowerColor} strokeWidth="1.2" opacity="0.4" />
         </svg>
 
-        {/* Clickable screen image */}
         <div
           onClick={nextScreen}
           style={{
@@ -102,7 +94,6 @@ export function AndroidMockup({ screens, flowerColor }: AndroidMockupProps) {
             }}
           />
 
-          {/* tap to switch label */}
           <div style={{
             position: 'absolute',
             bottom: 20,
@@ -127,7 +118,6 @@ export function AndroidMockup({ screens, flowerColor }: AndroidMockupProps) {
         </div>
       </div>
 
-      {/* Dot indicators */}
       <div style={{ display: 'flex', gap: 5, alignItems: 'center' }}>
         {screens.map((_, i) => (
           <div
