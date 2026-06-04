@@ -1,43 +1,54 @@
+# Illyria Dy — Portfolio
 
-  # Illyria Dy's Portfolio Website
+A personal portfolio website with a garden-inspired theme, showcasing projects, skills, and a built-in contact form.
 
-  A responsive portfolio website with a garden-inspired theme built using React and Tailwind.
+🌐 **Live site:** [illyriapdy.vercel.app](https://illyriapdy.vercel.app)
 
-  ## Features
+---
 
-  - Responsive layout for desktop and mobile
-  - Project showcase with interactive previews
-  - Downloadable CV and APK links (when available)
+## Technologies Used
 
-  ## Prerequisites
+- **React** + **TypeScript** — UI and component logic
+- **Vite** — build tool and dev server
+- **Tailwind CSS** — utility-first styling
+- **Lucide React** — icons
+- **Formspree** — contact form email delivery
 
-  - Node.js 18+ and a package manager (npm / pnpm)
+---
 
-  ## Development
+## Getting Started
 
-  Install dependencies:
+### Prerequisites
 
-  ```bash
-  npm install
-  # or
-  pnpm install
-  ```
+- Node.js 18+
+- npm or pnpm
 
-  Start the dev server:
+### Install dependencies
 
-  ```bash
-  npm run dev
-  # or
-  pnpm run dev
-  ```
+```bash
+npm install
+# or
+pnpm install
+```
 
-  ## Build
+### Start the dev server
 
-  ```bash
-  npm run build
-  ```
+```bash
+npm run dev
+# or
+pnpm run dev
+```
 
-  ## Notes
+### Build for production
 
-  This repository contains source assets and UI components for the portfolio site.
-  
+```bash
+npm run build
+```
+
+---
+
+## Deployment
+
+This site is deployed on **Vercel**. Any push to the `main` branch triggers an automatic redeployment.
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new)
